@@ -3,6 +3,14 @@
 #include <iostream>
 
 using namespace sf;
+
+Engine::Engine() {
+
+    /*
+    Загрузка текстуры
+    */
+}
+
 void Engine::render(sf::RenderWindow& window){
     window.clear();
     if (focud_windows == "") {
