@@ -40,3 +40,35 @@ std::vector<std::string> F::spl(std::string text) {
 	}
 	return result;
 };
+
+std::vector<std::string> F::textArea(std::string text, int long_line) {
+	int i = 0;
+	int j = 0;
+	std::vector<std::string> result;
+	std::vector<std::string> timed_str;
+	std::string  old_str = "";
+	std::string  new_str = "";
+	std::string  timed_strs = "";
+	timed_str = F::split(text, ' ');
+	while (i < timed_str.size() && i < text.size()) {
+		new_str += (timed_str[i] + ' ');
+		if (new_str.size() < long_line) {
+			old_str = new_str;
+		}
+		if(timed_str.size() > i + 1){
+		timed_strs = old_str + ' ' + timed_str[i + 1];
+		}
+		if (timed_strs.size() >= long_line) {
+			result.push_back(old_str);
+			new_str = "";
+		}
+
+		i++;
+	}
+	if (result[result.size()-1] != old_str) {
+		result.push_back(old_str);
+	}
+	
+	return result;
+
+};

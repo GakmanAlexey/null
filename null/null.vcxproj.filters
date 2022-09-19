@@ -19,6 +19,12 @@
     <Filter Include="Файлы заголовков\liba">
       <UniqueIdentifier>{a54551d9-75e9-4169-931a-f93790f66ca2}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Исходные файлы\engine">
+      <UniqueIdentifier>{a672401d-e734-40ed-ac65-fe96cc12c2f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\engine">
+      <UniqueIdentifier>{a7e77c54-2bd4-41d5-970e-54de5c409146}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="null.cpp">
@@ -30,6 +36,9 @@
     <ClCompile Include="F.cpp">
       <Filter>Исходные файлы\liba</Filter>
     </ClCompile>
+    <ClCompile Include="Engine.cpp">
+      <Filter>Исходные файлы\engine</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -40,6 +49,9 @@
     </ClInclude>
     <ClInclude Include="F.h">
       <Filter>Файлы заголовков\liba</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine.h">
+      <Filter>Файлы заголовков\engine</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

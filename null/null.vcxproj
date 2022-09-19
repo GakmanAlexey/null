@@ -127,6 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Engine.cpp" />
     <ClCompile Include="F.cpp" />
     <ClCompile Include="fun.cpp" />
     <ClCompile Include="null.cpp" />
@@ -135,6 +136,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Engine.h" />
     <ClInclude Include="F.h" />
     <ClInclude Include="fun.h" />
   </ItemGroup>

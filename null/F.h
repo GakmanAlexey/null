@@ -20,5 +20,13 @@ public:
 	Return: vector string 
 	*/
 	std::vector<std::string> spl(std::string text);
+
+	/*
+	ѕринимает —троку стринг и максимальный размер допустимой строки
+	¬озвращает вектор из набора строк подогнаных по размеру с помощью разделител€ пробела
+	Input: string , int
+	Return: vector string
+	*/
+	std::vector<std::string> textArea(std::string text, int long_line);
 };
 
