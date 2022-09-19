@@ -127,18 +127,22 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="CFG.cpp" />
     <ClCompile Include="Engine.cpp" />
     <ClCompile Include="F.cpp" />
     <ClCompile Include="fun.cpp" />
+    <ClCompile Include="load.cpp" />
     <ClCompile Include="null.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="CFG.h" />
     <ClInclude Include="Engine.h" />
     <ClInclude Include="F.h" />
     <ClInclude Include="fun.h" />
+    <ClInclude Include="load.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

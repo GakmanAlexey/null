@@ -39,6 +39,12 @@
     <ClCompile Include="Engine.cpp">
       <Filter>Исходные файлы\engine</Filter>
     </ClCompile>
+    <ClCompile Include="CFG.cpp">
+      <Filter>Исходные файлы\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="load.cpp">
+      <Filter>Исходные файлы\engine</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -51,6 +57,12 @@
       <Filter>Файлы заголовков\liba</Filter>
     </ClInclude>
     <ClInclude Include="Engine.h">
+      <Filter>Файлы заголовков\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="CFG.h">
+      <Filter>Файлы заголовков\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="load.h">
       <Filter>Файлы заголовков\engine</Filter>
     </ClInclude>
   </ItemGroup>
