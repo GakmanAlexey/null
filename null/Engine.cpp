@@ -1,11 +1,15 @@
 #include "Engine.h"
 #include <SFML/Graphics.hpp>
 #include <iostream>
+#include "load.h"
+#include "F.h"
 
 using namespace sf;
 
 Engine::Engine() {
-
+    LD.font();
+    LD.img();
+    LD.texturs();
     /*
     Загрузка текстуры
     */
@@ -14,7 +18,10 @@ Engine::Engine() {
 void Engine::render(sf::RenderWindow& window){
     window.clear();
     if (focud_windows == "") {
-       // std::cout << "active 1" << std::endl;
+        F f;
+        sf::Sprite Sprite_def;
+        window.draw(f.show_F(Sprite_def, LD.Texturs_fonL, 0, 0));
+
     }
     else if (focud_windows == "act") {
         //std::cout << "act" << std::endl;

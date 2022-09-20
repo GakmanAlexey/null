@@ -1,5 +1,6 @@
 #pragma once
 #include <vector>
+#include <SFML/Graphics.hpp>
 
 class F
 /*
@@ -28,5 +29,8 @@ public:
 	Return: vector string
 	*/
 	std::vector<std::string> textArea(std::string text, int long_line);
+
+
+	sf::Sprite show_F(sf::Sprite &Sprite_def,sf::Texture &texturs,int x, int y);
 };
 

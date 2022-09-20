@@ -1,4 +1,5 @@
 #include "F.h"
+#include <SFML/Graphics.hpp>
 
 std::vector<std::string> F::split(std::string text, char separator) {
 	int i = 0;
@@ -71,4 +72,11 @@ std::vector<std::string> F::textArea(std::string text, int long_line) {
 	
 	return result;
 
+};
+
+sf::Sprite F::show_F(sf::Sprite &Sprite_def,sf::Texture &texturs, int x, int y) {
+	
+	Sprite_def.setTexture(texturs);
+	Sprite_def.setPosition(x, y);
+	return Sprite_def;
 };
