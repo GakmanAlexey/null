@@ -32,5 +32,9 @@ public:
 
 
 	sf::Sprite show_F(sf::Sprite &Sprite_def,sf::Texture &texturs,int x, int y);
+
+	sf::Sprite show_S(sf::Sprite& Sprite_def, sf::Texture& texturs, int x, int y     ,int start_x, int start_y, int width, int height);
+
+	sf::Text show_T(sf::Text& t_s, sf::Font& font, int x, int y, sf::String& str, int font_size, int style_text);
 };
 

@@ -21,6 +21,9 @@ void Engine::render(sf::RenderWindow& window){
         F f;
         sf::Sprite Sprite_def;
         window.draw(f.show_F(Sprite_def, LD.Texturs_fonL, 0, 0));
+        window.draw(f.show_S(Sprite_def, LD.Texturs_ico16, 1160, 4, 0, 0, 16, 16));
+        window.draw(f.show_S(Sprite_def, LD.Texturs_ico16, 1180, 4, 32, 0, 16, 16));
+        window.draw(f.show_T(txt, LD.base_font, 24, 3, text_teader_windows, 14,0));
 
     }
     else if (focud_windows == "act") {

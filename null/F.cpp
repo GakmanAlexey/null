@@ -80,3 +80,22 @@ sf::Sprite F::show_F(sf::Sprite &Sprite_def,sf::Texture &texturs, int x, int y) 
 	Sprite_def.setPosition(x, y);
 	return Sprite_def;
 };
+
+
+sf::Sprite  F::show_S(sf::Sprite& Sprite_def, sf::Texture& texturs, int x, int y, int start_x, int start_y, int width, int height) {
+	Sprite_def.setTexture(texturs);
+	Sprite_def.setTextureRect(sf::IntRect(start_x, start_y, width, height));
+	Sprite_def.setPosition(x, y);
+	return Sprite_def;
+};
+
+sf::Text F::show_T(sf::Text &t_s,sf::Font &font, int x, int y, sf::String &str, int font_size, int style_text) {
+	t_s.setFont(font);
+	t_s.setPosition(x, y);
+	t_s.setString(str);
+	t_s.setCharacterSize(font_size);
+	if (style_text == 0) { 
+		t_s.setStyle(sf::Text::Bold); 
+	}
+	return t_s;
+}
